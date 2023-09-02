@@ -1,5 +1,5 @@
 # 🧮 Discord calculater bot
-[![discord](https://img.shields.io/badge/discord)
+[![discord](https://img.shields.io/badge/gavad-bisavad-red)
 *This is calculater discord bot By discord.py*
 
 Coding by : Farzad OXO ❄️
