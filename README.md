@@ -17,6 +17,7 @@ Options :
 
 
 Note :
+
 • Be sure to tick all intents on discord developer portal> applications>your application>bot .
 _____________________________________________
 
