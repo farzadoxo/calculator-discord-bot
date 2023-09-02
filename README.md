@@ -11,4 +11,4 @@ Options :
 
 
 
-**Don't forget to give star**
+**⭐️ Don't forget to give star ⭐️**
