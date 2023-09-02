@@ -11,6 +11,7 @@ _____________________________________________
 Options :
 
 • Perform 4 basic math operations
+
 • Calculation of perimeter and area of ​​4 main geometric.        shapes (circle, square, rectangle, triangle)
 
 
