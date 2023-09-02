@@ -8,7 +8,7 @@ Coding by : Farzad OXO ❄️
 
 
 _____________________________________________
-Options :
+# Options :
 
 • Perform 4 basic math operations
 
@@ -16,12 +16,11 @@ Options :
 
 
 
-Note :
+# Note :
 
 • Be sure to tick all intents on discord developer portal> applications>your application>bot .
 _____________________________________________
 
-__Detail: 2.2v__
 
 
 *(This code is free for use)*
