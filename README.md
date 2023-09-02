@@ -21,7 +21,7 @@ Note :
 • Be sure to tick all intents on discord developer portal> applications>your application>bot .
 _____________________________________________
 
-_Detail: 2.2v_
+__Detail: 2.2v__
 
 
 *(This code is free for use)*
