@@ -11,4 +11,11 @@ Options :
 
 
 
+Note :
+• Be sure to tick all intents on discord developer portal> applications>your application>bot .
+
+
+
+
+*(This code is free for use)*
 **⭐️ Don't forget to give star ⭐️**
