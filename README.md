@@ -1,4 +1,4 @@
-# Calculater Discord Bot 
+# 🧮 Calculater Discord Bot 
 
 
 
