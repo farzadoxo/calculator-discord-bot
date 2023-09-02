@@ -1,9 +1,11 @@
 # 🧮 Calculater Discord Bot 
-
+__________________________________________
 
 *This is calculater discord bot By discord.py*
 
 Coding by : Farzad OXO ❄️
+
+
 
 Options :
 • Perform 4 basic math operations
