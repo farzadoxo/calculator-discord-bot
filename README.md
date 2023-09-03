@@ -1,7 +1,7 @@
 # 🧮 Discord calculater bot
-![discord](https://img.shields.io/badge/Discord-Bot-blue)
+![discord](https://img.shields.io/badge/Discord-API-blue)
 ![discordpy](https://img.shields.io/badge/discord.py-v2.3-pink)
-![dildo](https://img.shields.io/badge/Python-70%)
+
 
 *This is calculater discord bot By discord.py*
 
