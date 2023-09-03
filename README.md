@@ -1,8 +1,8 @@
 # >> Discord calculater bot
-![discord](https://img.shields.io/badge/Discord-API-purple?style=plastic&logo=Discord)
-![discordpy](https://img.shields.io/badge/discord.py-v2.3-blue?style=plastic&logo=Python&logoColor=yellow)
+![discord](https://img.shields.io/badge/Discord-API-purple?style=flat&logo=Discord)
+![discordpy](https://img.shields.io/badge/discord.py-v2.3-blue?style=flat&logo=Python&logoColor=yellow)
 
-![GitHub followers](https://img.shields.io/github/followers/Farzad-0x0?label=Dalgh)
+
 
 
 *This is calculater discord bot By discord.py*
