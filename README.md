@@ -1,6 +1,6 @@
 # 🧮 Discord calculater bot
 ![discord](https://img.shields.io/badge/Discord-Bot-blue)
-![python](https://img.shields.io/badge/discord.py-yellow)
+![python](https://img.shields.io/badge/discord.py-yellow&logo=python)
 
 *This is calculater discord bot By discord.py*
 
