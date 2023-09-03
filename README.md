@@ -14,7 +14,7 @@ _____________________________________________
 
 • Calculation of perimeter and area of ​​4 main geometric.        shapes (circle, square, rectangle, triangle)
 
-
+• Support slash commands
 
 # Note :
 
