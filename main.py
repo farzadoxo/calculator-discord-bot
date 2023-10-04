@@ -22,7 +22,7 @@ bot = commands.Bot(command_prefix= "CL!",
 async def on_ready():
    try:
       synced = await bot.tree.sync()
-      print(Fore.CYAN+"-->" ,Fore.GREEN+"Synced" , Fore.YELLOW+f"{len(synced)}" , Fore.GREEN+"Slash Command")
+      print(Fore.CYAN+"-->" ,Fore.GREEN+"Synced" , Fore.YELLOW+f"{len(synced)}" , Fore.GREEN+"Slash Commands")
 
    except Exception as e :
       print(e)
@@ -76,14 +76,14 @@ async def circle(interaction:discord.Interaction , radius:int , operation:discor
       await interaction.response.send_message(f"""```
 π = 3.14
 The formula : (Radius × Radius) × π
-------------------------------------------
+•••••••••••••••••••••••••••••••••••••••••••
 Solution : {radius} × {radius} × {pi} = {radius * radius * pi}```""")
    elif operation.value == "perimeter":
       await interaction.response.send_message(f"""```
 π = 3.14
 Diameter = Radius + Radius
 The formula : Diameter * π
-------------------------------------------
+••••••••••••••••••••••••••••••••••••••••••••
 Solution : {diameter} × {pi} = {diameter * pi}```""")
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
@@ -100,13 +100,13 @@ async def square(interaction:discord.Interaction,side:int , operation:discord.ap
    if operation.value == "area":
       await interaction.response.send_message(f"""```
 The formula : side × side
-------------------------------
+•••••••••••••••••••••••••••••••
 Solution : {side} × {side} = {side*side}```""")
    
    elif operation.value == "perimeter" :
       await interaction.response.send_message(f"""```
 The formula : side × 4
--------------------------
+•••••••••••••••••••••••••••••••
 Solution : {side} × 4 = {side*4}```""")
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
@@ -124,7 +124,7 @@ async def rectangle(interaction:discord.Interaction , length:int , width:int,ope
    if operation.value == "area" :
       await interaction.response.send_message(f"""```
 The formula : length × width
---------------------------------
+•••••••••••••••••••••••••••••••••••••••••••••••••••
 Solution : {length} × {width} = {length*width}```""")
       
    elif operation.value == "perimeter" :
@@ -132,7 +132,7 @@ Solution : {length} × {width} = {length*width}```""")
       second = first * 2
       await interaction.response.send_message(f"""```
 The formula : (length + width) × 2
-----------------------------------------
+••••••••••••••••••••••••••••••••••••••••••••••••••••
 Solution : {length} + {width} × 2 = {second}```""")
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
@@ -152,17 +152,19 @@ async def triangle(interactio:discord.Interaction, base:int , height:int , opera
       second = first / 2
       await interactio.response.send_message(f"""```
 The formula : (base × height) ÷ 2 
-----------------------------------------
+••••••••••••••••••••••••••••••••••••••••••••••••••
 Solution : {base} × {height} ÷ 2 = {second}```""")
       
    elif operation.value == "perimeter" :
       await interactio.response.send_message(f"""```
 The formula : base × 3
---------------------------------------
+••••••••••••••••••••••••••••••••••••••••••••••••••
 Solution : {base} × 3 = {base *3}```""")
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
+
+
 
 
 bot.run(token)
