@@ -1,6 +1,6 @@
 # Discord calculater bot
 ![discord](https://img.shields.io/badge/Discord-API-purple?style=flat&logo=Discord)
-![discordpy](https://img.shields.io/badge/discord.py-v2.3-blue?style=flat&logo=Python&logoColor=yellow)
+![discordpy](https://img.shields.io/badge/discord.py-v2.4-blue?style=flat&logo=Python&logoColor=yellow)
 
 
 
