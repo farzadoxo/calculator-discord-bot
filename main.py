@@ -46,15 +46,25 @@ async def on_ready():
 ])
 @app_commands.describe(num_2 = "Enter second number")
 async def computing(interaction:discord.Interaction , num_1:int , operation:discord.app_commands.Choice[str] , num_2:int):
+   from embeds import computing_embed
+
 
    if operation.value == "+":
-      await interaction.response.send_message(f"""```{num_1} + {num_2} = {num_1+num_2}```""")
+      computing_embed.add_field(name="**Resault :**",value=f"{num_1} + {num_2} = {num_1 + num_2}")
+      await interaction.response.send_message(embed=computing_embed)
+      computing_embed.remove_field(index=0)
    elif operation.value == "×":
-      await interaction.response.send_message(f"""```{num_1} × {num_2} = {num_1*num_2}```""")
+      computing_embed.add_field(name="**Resault :**",value=f"{num_1} × {num_2} = {num_1 * num_2}")
+      await interaction.response.send_message(embed=computing_embed)
+      computing_embed.remove_field(index=0)
    elif operation.value == "-":
-      await interaction.response.send_message(f"""```{num_1} - {num_2} = {num_1-num_2}```""")
+      computing_embed.add_field(name="**Resault :**",value=f"{num_1} - {num_2} = {num_1 - num_2}")
+      await interaction.response.send_message(embed=computing_embed)
+      computing_embed.remove_field(index=0)
    elif operation.value == "÷":
-      await interaction.response.send_message(f"""```{num_1} ÷ {num_2} = {num_1/num_2}```""")
+      computing_embed.add_field(name="**Resault :**",value=f"{num_1} ÷ {num_2} = {num_1 / num_2}")
+      await interaction.response.send_message(embed=computing_embed)
+      computing_embed.remove_field(index=0)
 
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
@@ -68,23 +78,25 @@ async def computing(interaction:discord.Interaction , num_1:int , operation:disc
    discord.app_commands.Choice(name="Perimeter" , value= "perimeter")
 ])
 async def circle(interaction:discord.Interaction , radius:int , operation:discord.app_commands.Choice[str]):
+   from embeds import circle_embed
 
    pi = 3.14
    diameter = radius + radius
    
    if operation.value == "area":
-      await interaction.response.send_message(f"""```
-π = 3.14
-The formula : (Radius × Radius) × π
-•••••••••••••••••••••••••••••••••••••••••••
-Solution : {radius} × {radius} × {pi} = {radius * radius * pi}```""")
+      circle_embed.add_field(name="**Area :**",value=f"{radius} × {radius} × {pi} = {radius*radius * pi}")
+      circle_embed.set_footer(text="The formula : (Radius × Radius) × π")
+      await interaction.response.send_message(embed=circle_embed)
+      circle_embed.remove_field(index=0)
+      circle_embed.remove_footer()
+
    elif operation.value == "perimeter":
-      await interaction.response.send_message(f"""```
-π = 3.14
-Diameter = Radius + Radius
-The formula : Diameter * π
-••••••••••••••••••••••••••••••••••••••••••••
-Solution : {diameter} × {pi} = {diameter * pi}```""")
+      circle_embed.add_field(name="**Perimeter :**",value=f"{diameter} × {pi} = {diameter*pi}")
+      circle_embed.set_footer(text="The formula : Diameter * π")
+      await interaction.response.send_message(embed=circle_embed)
+      circle_embed.remove_field(index=0)
+      circle_embed.remove_footer()
+
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
@@ -97,17 +109,21 @@ Solution : {diameter} × {pi} = {diameter * pi}```""")
    discord.app_commands.Choice(name="Perimeter" , value= "perimeter")
 ])
 async def square(interaction:discord.Interaction,side:int , operation:discord.app_commands.Choice[str]):
+   from embeds import square_embed
+
    if operation.value == "area":
-      await interaction.response.send_message(f"""```
-The formula : side × side
-•••••••••••••••••••••••••••••••
-Solution : {side} × {side} = {side*side}```""")
+      square_embed.add_field(name="**Area :**",value=f"{side} × {side} = {side*side}")
+      square_embed.set_footer(text="The formula : side × side")
+      await interaction.response.send_message(embed=square_embed)
+      square_embed.remove_field(index=0)
+      square_embed.remove_footer()
    
    elif operation.value == "perimeter" :
-      await interaction.response.send_message(f"""```
-The formula : side × 4
-•••••••••••••••••••••••••••••••
-Solution : {side} × 4 = {side*4}```""")
+      square_embed.add_field(name="**Perimeter :**",value=f"{side} × 4 = {side*4}")
+      square_embed.set_footer(text="The formula : side × 4")
+      await interaction.response.send_message(embed=square_embed)
+      square_embed.remove_field(index=0)
+      square_embed.remove_footer()
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
@@ -121,19 +137,23 @@ Solution : {side} × 4 = {side*4}```""")
    discord.app_commands.Choice(name="Perimeter" , value= "perimeter")
 ])
 async def rectangle(interaction:discord.Interaction , length:int , width:int,operation:discord.app_commands.Choice[str]):
+   from embeds import rectangle_embed
+
+
    if operation.value == "area" :
-      await interaction.response.send_message(f"""```
-The formula : length × width
-•••••••••••••••••••••••••••••••••••••••••••••••••••
-Solution : {length} × {width} = {length*width}```""")
+      rectangle_embed.add_field(name="**Area :**",value=f"{length} × {width} = {length*width}")
+      rectangle_embed.set_footer(text="The formula : length × width")
+      await interaction.response.send_message(embed=rectangle_embed)
+      rectangle_embed.remove_field(index=0)
+      rectangle_embed.remove_footer()
       
    elif operation.value == "perimeter" :
-      first = length + width
-      second = first * 2
-      await interaction.response.send_message(f"""```
-The formula : (length + width) × 2
-••••••••••••••••••••••••••••••••••••••••••••••••••••
-Solution : {length} + {width} × 2 = {second}```""")
+      resault = length + width * 2
+      rectangle_embed.add_field(name="**Perimeter :**",value=f"({length} + {width}) = {resault}")
+      rectangle_embed.set_footer(text="The formula : (length + width) × 2")
+      await interaction.response.send_message(embed=rectangle_embed)
+      rectangle_embed.remove_field(index=0)
+      rectangle_embed.remove_footer()
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
@@ -147,24 +167,35 @@ Solution : {length} + {width} × 2 = {second}```""")
    discord.app_commands.Choice(name="Perimeter" , value= "perimeter")
 ])
 async def triangle(interactio:discord.Interaction, base:int , height:int , operation:discord.app_commands.Choice[str]):
+   from embeds import triangle_embed
+
    if operation.value == "area":
-      first = base * height
-      second = first / 2
-      await interactio.response.send_message(f"""```
-The formula : (base × height) ÷ 2 
-••••••••••••••••••••••••••••••••••••••••••••••••••
-Solution : {base} × {height} ÷ 2 = {second}```""")
+      resault = base * height / 2
+      triangle_embed.add_field(name="**Area :**",value=f"{base} × {height} ÷ 2 = {resault}")
+      triangle_embed.set_footer(text="The formula : (base × height) ÷ 2 ")
+      await interactio.response.send_message(embed=triangle_embed)
+      triangle_embed.remove_field(index=0)
+      triangle_embed.remove_footer()
       
    elif operation.value == "perimeter" :
-      await interactio.response.send_message(f"""```
-The formula : base × 3
-••••••••••••••••••••••••••••••••••••••••••••••••••
-Solution : {base} × 3 = {base *3}```""")
+      triangle_embed.add_field(name="**Perimeter :**",value=f"{base} × 3 = {base * 3}")
+      triangle_embed.set_footer(text="The formula : base × 3")
+      await interactio.response.send_message(embed=triangle_embed)
+      triangle_embed.remove_field(index=0)
+      triangle_embed.remove_footer()
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
-
+@bot.tree.command(name='multiplication_table',description="Multiplication table 🧮")
+async def multiplication_table(interaction:discord.Interaction):
+   from embeds import multiplication_table_img
+   await interaction.response.send_message(embed=multiplication_table_img)
+#_____________________________________________________________________________________________________
+#_____________________________________________________________________________________________________
+#_____________________________________________________________________________________________________
 
 
 
 bot.run(token)
+
+
