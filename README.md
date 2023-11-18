@@ -9,8 +9,27 @@
 
 Coding by : Farzad OXO ❄️
 
+# Get started :
+1- Go to [Discord developer portal](https://discord.com/developers/applications) and create a application.
 
+2- copy your application token.
 
+3- clone this repositore or copy main.py and embeds.py code, to your bot code.
+
+4- now you need to librarys and resources *(refere to Requirements.txt)* 
+
+For discord.py :
+
+```
+pip install discord.py
+```
+For colorama :
+```
+pip install colorama
+```
+5- paste your token into your code and run python file
+
+6- ENJOY 🤍🥰
 _____________________________________________
 # Options :
 
@@ -22,7 +41,7 @@ _____________________________________________
 
 # Note :
 
-• Be sure to tick all intents on discord developer portal> applications>your application>bot .
+Be sure to tick all intents on discord developer portal> applications>your application>bot .
 _____________________________________________
 
 
