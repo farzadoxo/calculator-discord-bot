@@ -1,5 +1,7 @@
 import discord
 
+# at this file embeds generated
+
 multiplication_table_img = discord.Embed(color=discord.Colour.gold())
 multiplication_table_img.set_image(url="https://jdwalzarb.ir/wp-content/uploads/2023/06/%D8%B9%DA%A9%D8%B3-%D8%AC%D8%AF%D9%88%D9%84-%D8%B6%D8%B1%D8%A8-%DA%A9%D8%A7%D9%85%D9%84.png")
 

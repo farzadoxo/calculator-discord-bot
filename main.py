@@ -34,6 +34,8 @@ async def on_ready():
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
+
+# This command is responsible for performing 4 main actions 
 @bot.tree.command(
    name= "computing" , description= "Calculation of 4 main mathematical operations ➖➕➗"
 )
@@ -49,6 +51,7 @@ async def computing(interaction:discord.Interaction , num_1:int , operation:disc
    from embeds import computing_embed
 
 
+      # conditions
    if operation.value == "+":
       computing_embed.add_field(name="**Resault :**",value=f"{num_1} + {num_2} = {num_1 + num_2}")
       await interaction.response.send_message(embed=computing_embed)
@@ -69,6 +72,7 @@ async def computing(interaction:discord.Interaction , num_1:int , operation:disc
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
+       # compute area and premeter of circle
 @bot.tree.command(
    name= "circle" , description= "Calculate the circumference and area of a circle ⭕"
 )
@@ -100,6 +104,7 @@ async def circle(interaction:discord.Interaction , radius:int , operation:discor
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
+         # compute area and premeter of square
 @bot.tree.command(
    name= "square" , description= "Calculate the perimeter and area of the square 🔳"
 )
@@ -127,6 +132,7 @@ async def square(interaction:discord.Interaction,side:int , operation:discord.ap
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
+         # compute area and premeter of rectangle
 @bot.tree.command(
    name= "rectangle" ,description="Calculate the perimeter and area of the rectangle 🔲"
 )
@@ -157,6 +163,7 @@ async def rectangle(interaction:discord.Interaction , length:int , width:int,ope
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
+         # compute area and premeter of triangle
 @bot.tree.command(
    name= "triangle" , description= "Calculate the perimeter and area of the triangle 🔺"
 )
@@ -186,6 +193,7 @@ async def triangle(interactio:discord.Interaction, base:int , height:int , opera
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
 #_____________________________________________________________________________________________________
+      # send a multiplication table (picture)
 @bot.tree.command(name='multiplication_table',description="Multiplication table 🧮")
 async def multiplication_table(interaction:discord.Interaction):
    from embeds import multiplication_table_img
