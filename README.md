@@ -1,3 +1,8 @@
+<center>
+    <img width=250 src="readme\calc.png">
+</center>
+
+
 # Discord calculater bot
 ![discord](https://img.shields.io/badge/Discord-API-purple?style=flat&logo=Discord)
 ![discordpy](https://img.shields.io/badge/discord.py-v2.3.2-blue?style=flat&logo=Python&logoColor=yellow)

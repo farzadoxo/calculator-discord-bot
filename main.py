@@ -205,5 +205,3 @@ async def multiplication_table(interaction:discord.Interaction):
 
 
 bot.run(token)
-
-
