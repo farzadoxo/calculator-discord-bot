@@ -3,16 +3,9 @@
 </center>
 
 
-# Discord calculater bot
+# Discord calculator bot
 ![discord](https://img.shields.io/badge/Discord-API-purple?style=flat&logo=Discord)
 ![discordpy](https://img.shields.io/badge/discord.py-v2.3.2-blue?style=flat&logo=Python&logoColor=yellow)
-
-
-
-
-*This is calculater discord bot By discord.py*
-
-Coding by : Farzad OXO ❄️
 
 # Get started :
 1- Go to [Discord developer portal](https://discord.com/developers/applications) and create a application.
@@ -40,7 +33,7 @@ _____________________________________________
 
 • Perform 4 basic math operations
 
-• Calculation of perimeter and area of ​​4 main geometric.        shapes (circle, square, rectangle, triangle)
+• calculation of perimeter and area of ​​4 main geometric.        shapes (circle, square, rectangle, triangle)
 
 • Support slash commands
 
